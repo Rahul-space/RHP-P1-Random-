@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import {  useState } from "react";
 import "./create.css";
 import axios from "axios";
 
 
-export default function NewMovie() {
-  const [movie, setMovie] = useState(null);
+export default function NewUser() {
+  const [user, setuser] = useState(null);
   const [dob,setdob]=useState(null);
   const [address,setaddress]=useState(null);
   const [contact, setcontact] = useState(null);
@@ -20,7 +20,7 @@ export default function NewMovie() {
   };
   const handleChange = (e) => {
     const value = e.target.value;
-    setMovie({ ...movie, [e.target.name]: value });
+    setuser({ ...user, [e.target.name]: value });
   };
   const handleChangedob = (e) => {
     const value = e.target.value;
@@ -37,7 +37,7 @@ export default function NewMovie() {
 
 
   const handleSubmit = (e) => {
-    setMovie({...movie,dob,address,contact});
+    setuser({...user,dob,address,contact});
     register();
     e.preventDefault();
   };
@@ -45,7 +45,7 @@ export default function NewMovie() {
 
   return (
     <div className="newProduct">
-      <h1 className="addProductTitle">New Movie</h1>
+      <h1 className="addProductTitle">User</h1>
       <form className="addProductForm">
         <div className="addProductItem">
           <label>Name</label>
