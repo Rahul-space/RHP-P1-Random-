@@ -152,7 +152,6 @@ background-image: url(https://www.gstatic.com/images/icons/material/colored_icon
     background-color: rgba(240, 248, 255, 0.641);
     box-shadow: 0 4px 8px 0 rgba(255, 224, 224, 0.637), 0 6px 20px 0 rgba(255, 248, 122, 0.505);
 }
-.navbar{}
 .btn:hover {
 background-position: 10px;
 width: 150px;
