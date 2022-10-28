@@ -5,9 +5,6 @@ const dotenv = require("dotenv");
 const authRoute = require("./routes/auth");
 const userRoute= require("./routes/user")
 
-const cors = require('cors');  
-app.use(cors({credentials: true, origin: '*'}));
-dotenv.config();
 
 mongoose
   .connect("mongodb+srv://Rahul:21022003@cluster0.tvmai5q.mongodb.net/todo?retryWrites=true&w=majority", {
